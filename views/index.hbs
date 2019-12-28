@@ -1,0 +1,38 @@
+<h1>Todo's</h1>
+<div class="sort">
+    <form action="/all" method="GET">
+        <button class="btn btn-small" type="submit">All</button>
+    </form>
+    <form action="/done" method="GET">
+        <button class="btn btn-small" type="submit">Finished</button>
+    </form>
+    <form action="/undone" method="GET">
+        <button class="btn btn-small" type="submit">Unfinished</button>
+    </form>
+</div>
+{{#if todos.length}}
+    <ul>
+        {{#each todos}}
+            <li class="todo">
+                <form action="/complete" method="POST">
+                    <label>
+                        {{#if completed}}
+                            <input type="checkbox" checked name="check">
+                            <span class="completed">{{title}}</span>
+                        {{else}}
+                            <input type="checkbox" name="check">
+                            <span>{{title}}</span>
+                        {{/if}}
+
+                        <input type="hidden" value="{{_id}}" name="id">
+                        <div class="btn-control">
+                            <button class="btn btn-small" type="submit">SAVE</button>
+                        </div>
+                    </label>
+                </form>
+            </li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>There are no todo's</p>
+{{/if}}

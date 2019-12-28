@@ -1,0 +1,28 @@
+{
+  "name": "todo_app_nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banduraweb/todo_app_nodeJS_mongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banduraweb/todo_app_nodeJS_mongoDB/issues"
+  },
+  "homepage": "https://github.com/banduraweb/todo_app_nodeJS_mongoDB#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-engine-jsx": "^2.0.4",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.8.3"
+  }
+}
