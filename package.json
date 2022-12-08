@@ -20,7 +20,7 @@
   "homepage": "https://github.com/banduraweb/todo_app_nodeJS_mongoDB#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-engine-jsx": "^2.0.4",
     "express-handlebars": "^3.1.0",
     "mongoose": "^5.8.3"
